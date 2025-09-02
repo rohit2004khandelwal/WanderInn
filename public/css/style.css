@@ -1,6 +1,6 @@
-/* body{
-    background-color: rgb(236, 127, 173);
-} */
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+}
 .navbar{
     height: 5rem;
     background-color: white;
@@ -55,4 +55,20 @@
 .card-body{
     padding: 0 !important;
 
+}
+.card-text p{
+    font-weight: 400 !important;
+}
+.listing-link{
+    text-decoration: none;
+    color: inherit;
+}
+/* Card effect */
+.card-img-overlay{
+    opacity: 0;
+
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
 }
