@@ -14,8 +14,8 @@ const listingSchema = new schema({
     },
     url: {
         type: String,
-        default: "c:/Users/hp/Downloads/muhammad-kamran-khan-zo_udYMcaVc-unsplash.jpg",
-        set: (v) => v === "" ? "c:/Users/hp/Downloads/muhammad-kamran-khan-zo_udYMcaVc-unsplash.jpg" : v,
+        default: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+        set: (v) => v === "" ? "https://images.unsplash.com/photo-1506744038136-46273834b3fb" : v,
     }
 },
     price: Number,
