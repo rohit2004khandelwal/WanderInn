@@ -7,7 +7,9 @@ const methodOverride = require('method-override');
 const ejsMate = require('ejs-mate');
 
 // MongoDB connection
-const MONGO_URL = "mongodb+srv://rohit2004khandelwal:6c0AeAxRfaY7qUcG%40cluster0.qqqtdlr.mongodb.net/wanderinn";
+const MONGO_URL = "mongodb+srv://rohit2004khandelwal:6c0AeAxRfaY7qUcG%40@cluster0.qqqtdlr.mongodb.net/wanderinn";
+
+
 main().then(() => {
     console.log("Connected to MongoDB")
 }).catch(err => {
