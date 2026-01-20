@@ -7,7 +7,7 @@ const methodOverride = require('method-override');
 const ejsMate = require('ejs-mate');
 
 // MongoDB connection
-const MONGO_URL = "mongodb://127.0.0.1:27017/wanderinn";
+const MONGO_URL = "mongodb+srv://rohit2004khandelwal:6c0AeAxRfaY7qUcG@cluster0.qqqtdlr.mongodb.net/wanderinn";
 main().then(() => {
     console.log("Connected to MongoDB")
 }).catch(err => {
@@ -88,6 +88,8 @@ app.delete("/listings/:id", async (req, res) => {
 //     console.log("Listing saved");
 //     res.send("success testing");
 // });
-app.listen(8080, () => {
-    console.log('Server is running on port 8080');
+
+const port = process.env.PORT || 8080;
+app.listen(port, () => {
+    console.log('Server started');
 });
